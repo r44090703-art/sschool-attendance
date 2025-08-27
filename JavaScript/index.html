@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Attendance System of Quran Academy</h2>
+  <div class="container">
+    <h3>Add Student</h3>
+    <input type="text" id="studentName" placeholder="Enter Student Name">
+    <button class="btn" onclick="addStudent()">Add Student</button>
+
+    <h3>Mark Attendance</h3>
+    <label for="date">Select Date:</label>
+    <input type="date" id="date"><br><br>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Mark</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable"></tbody>
+    </table>
+
+    <h3>Attendance Records</h3>
+    <button class="btn" onclick="exportCSV()">📂 Export to Excel</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="recordTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
